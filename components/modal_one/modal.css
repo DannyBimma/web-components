@@ -1,0 +1,22 @@
+.exit-intent-popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(33, 33, 33, 0.3);
+  transform: translateY(60%) scale(0);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mailing-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.exit-intent-popup.modal-visible {
+  transform: translate(0) scale(1);
+}
